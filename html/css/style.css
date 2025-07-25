@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: #0a2540;
+  background: #ffffff;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+}
+.nav_links {
+  display: flex;
+  gap: 30px;
+}
+.nav_links a {
+  text-decoration: none;
+  color: #0a2540;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.nav_links a:hover {
+  color: #635bff;
+}
+.btn_primary {
+  padding: 10px 20px;
+  background: #635bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+.btn_primary:hover {
+  background: #5046e5;
+  transform: translateY(-2px);
+}
+.btn_secondary {
+  padding: 10px 20px;
+  background: transparent;
+  border: 2px solid #635bff;
+  color: #635bff;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn_secondary:hover {
+  background: #635bff;
+  color: #fff;
+}
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #e0e8ff, #f9faff);
+}
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color: #425466;
+}
+.hero_actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 80px 20px;
+  background: #fff;
+  flex-wrap: wrap;
+}
+.feature {
+  flex: 1 1 250px;
+  max-width: 300px;
+  text-align: center;
+}
+.icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+  size: 5px;
+}
+.feature h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.feature p {
+  color: #425466;
+}
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #eaeaea;
+  font-size: 14px;
+  color: #425466;
+}
+/* Mobile responsive: sẽ kết hợp với hamburger menu sau */
+@media (max-width: 768px) {
+  .nav_links {
+    flex-direction: column;
+    gap: 0;
+  }
+  .dropdown-content {
+    position: static;
+    box-shadow: none;
+  }
+}
+.dropdown {
+  position: relative; /* cha để dropdown định vị tuyệt đối */
+}
+/* Dropdown content (ẩn mặc định) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%; /* lấy tâm của item cha */
+  transform: translateX(-50%); /* dịch ngược lại để căn giữa */
+  background: #fff;
+  min-width: 180px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #0a2540;
+  transition: background 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background: #f3f4f6;
+}
+
+/* Hiện dropdown khi hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* submenu */
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu-content {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%; /* hiển thị bên phải item cha */
+  background: #fff;
+  min-width: 180px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+.dropdown-submenu:hover .dropdown-submenu-content {
+  display: block;
+}
+/* style link */
+.dropdown-content a,
+.dropdown-submenu-content a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #0a2540;
+}
+
+.dropdown-content a:hover,
+.dropdown-submenu-content a:hover {
+  background: #f3f4f6;
+}
