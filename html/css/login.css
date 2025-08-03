@@ -29,6 +29,11 @@ body {
   font-size: 36px;
   text-align: center;
 }
+.wrapper .img{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
 
 .wrapper .input-box {
   width: 100%;

@@ -68,6 +68,11 @@ body {
   text-align: center;
   padding: 100px 20px;
   background: linear-gradient(135deg, #e0e8ff, #f9faff);
+  background: url(../pic/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
 }
 .hero h1 {
   font-size: 48px;
@@ -77,7 +82,7 @@ body {
   font-size: 20px;
   line-height: 1.5;
   margin-bottom: 30px;
-  color: #425466;
+  /* color: #425466; */
 }
 .hero_actions {
   display: flex;
@@ -190,4 +195,27 @@ body {
 .dropdown-content a:hover,
 .dropdown-submenu-content a:hover {
   background: #f3f4f6;
+}
+
+.noti{
+  margin-right: 10px;
+  font-size: 1.5rem;
+  color: #5046e5;
+  position: relative;
+}
+.mes-number{
+  color: #fff;
+  background: red;
+  padding: 0.5rem;
+  border-radius: 50%;
+  position: absolute;
+  left: 20px;
+  top: -20px;
+}
+.avartar{
+  max-width: 3.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
 }
